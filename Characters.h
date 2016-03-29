@@ -6,6 +6,11 @@ private:
 	int character;
 	int characterHealth;
 	int characterAttack;
+	int characterArmor;
+	//Bandit
+	int bandit;
+	int banditHealth;
+	int banditAttack;
 	//First Boss
 	int baas;
 	int baasHealth;
@@ -16,7 +21,68 @@ private:
 	int megatronArmor;
 	int megatronAttack;
 	//Third Boss
+	int hound;
+	int houndHealth;
+	int houndAttack;
+	//Fourth Boss
+	int zombiehoard;
+	int zombiehoardHealth;
+	int zombiehoardAttack;
+	//Fifth Boss
+	int trex;
+	int trexHealth;
+	int trexAttack;
+	//Sixth Boss
+	int Hades;
+	int HadesHealth;
+	int HadesArmor;
+	int HadesAttack;
+    //Seventh Boss
+	int zeus;
+	int zeusHealth;
+	int zeusArmor;
+	int zeusAttack;
 
+public:
+	int getCharacter();
+	int getCharacterHealth();
+	int getCharacterAttack();
+	int getCharacterArmor();
+
+	int getBandit();
+	int getBanditHealth();
+	int getBanditAttack();
+
+	int getBaas();
+	int getBaasHealth();
+	int getBaasAttack();
+
+	int getMegatron();
+	int getMegatronHealth();
+	int getMegatronArmor();
+	int getMegatronAttack();
+
+	int getHound();
+	int getHoundHealth();
+	int getHoundAttack();
+
+	int getZombiehoard();
+	int getZombiehoardHealth();
+	int getZombiehoardAttack();
+
+	int getTrex();
+	int getTrexHealth();
+	int getTrexAttack();
+
+	int getHades();
+	int getHadesHealth();
+	int getHadesArmor();
+	int getHadesAttack();
+
+	int getZeus();
+	int getZeusHealth();
+	int getZeusArmor();
+	int getZeusAttack();
 
 
 

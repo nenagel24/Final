@@ -23,4 +23,15 @@ public:
 	int getIngramsShield;
 	int getKryptoBlade;
 	int getGoldSuit;
+
+	int setWarriorShield();
+	int setHermesBlade();
+	int setKnightArmor();
+	int setHealingPotion();
+	int setRagePotion();
+	int setSpeedPotion();
+	int setIngramsShield();
+	int setKryptoBlade();
+	int setGoldSuit();
+
 };

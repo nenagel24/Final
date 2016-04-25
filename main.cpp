@@ -9,28 +9,31 @@ using namespace std;
 
 int main(){
 	ifstream f;
-	int health;
+	int health = 60;
+	int armor = 0;
+	int defense = 40;
+	int attack = 30;
 	int kills = 0;
 	int deaths = 0;
 	float money = 0;
 	string name;
 	characters characters;
-	int mainMenu;
-	int shopSelect;
+	int mainMenu = 0;
+	int shopSelect = 0;
+	cout << "Welcome to C++ RPG " << endl;
+	cout << "The file for statistic outputs will be CRPG.txt " << endl;
+	cout << "Enter a name for your character: " << endl;
+	getline(cin, name);
+	cout << "You will now be referred to as: " << name << endl;
+	cout << "On this epic Journey you will accomplish what many coulnd't" << endl;
+	cout << "Defeat the Seven Bosses and be remembered for ever " << endl;
+	cout << "Embark on your journey,  " << name << endl;
 	while (true){
 
-		cout << "Welcome to C++ RPG " << endl;
-		cout << "The file for statistic outputs will be CRPG.txt " << endl;
-		cout << "Enter a name for your character: " << endl;
-		getline(cin, name);
-		cout << "You will now be referred to as: " << name << endl;
-		cout << "On this epic Journey you will accomplish what many coulnd't" << endl;
-		cout << "Defeat the Seven Bosses and be remembered for ever " << endl;
-		cout << "Everyone must fear the name: " << name << endl;
-
-
+		
 
 		cout << "Main Menu " << endl;
+		cout << "Kills:  " << kills << " Deaths:  " << deaths << endl;
 		cout << "Select what you want to do:  " << endl;
 		cout << "1. Prologue " << endl;
 		cout << "2. Shop " << endl;
@@ -44,25 +47,102 @@ int main(){
 		cout << "10. Final Boss - Zeus  " << endl;
 		cin >> mainMenu;
 		switch (mainMenu){
+
 		case 1:
 			cout << "Your father was known for his skill of martial arts and his brute strength " << endl;
 			cout << "He died fighting for your village against Zeus, the God of lightning " << endl;
 			cout << "You now seek revenge on Zeus for killing your father and kidnapping your younger siblings " << endl;
 			mainMenu - 1;
+			break;
 		case 2:
 			cout << "Welcome to Rons Shop of the Underworld! " << endl;
 			cout << "Your balance is: " << money << endl;
-			cout << "1. Warriors Shield(+10) Defense " << endl;
-			cout << "2. Hermes Blade(+12) Attack " << endl;
-			cout << "3. Knights armor(+20) Armor  " << endl;
-			cout << "4. Healing Potion(+15) Health " << endl;
-			cout << "5. Rage Potion(+15) Attack 3 moves only " << endl;
-			cout << "6. Speed Potion, One use, allows battle flee " << endl;
-			cout << "7. Ingrams Steel Shield(+20) Defense " << endl;
-			cout << "8. Kryptonite Blade(+50) Attack " << endl;
-			cout << "9. Gold Titanium Alloy Suit(+70) Armor " << endl;
+			cout << "1. Warriors Shield(+10) Defense " << "Cost: 10 " << endl;
+			cout << "2. Hermes Blade(+12) Attack " << "Cost: 22 " << endl;
+			cout << "3. Knights armor(+20) Armor  " << "Cost: 40 " << endl;
+			cout << "4. Healing Potion(+15) Health " << "Cost: 25 [ONE USE ONLY] " << endl;
+			cout << "5. Rage Potion(+15) Attack 3 moves only " << "Cost: 30 [ONE USE ONLY] " << endl;
+			cout << "6. Speed Potion, One use, allows battle flee " << "Cost: 20 [ONE USE ONLY] " << endl;
+			cout << "7. Ingrams Steel Shield(+20) Defense " << "Cost: 60 " << endl;
+			cout << "8. Kryptonite Blade(+50) Attack " << "Cost: 100 " << endl;
+			cout << "9. Gold Titanium Alloy Suit(+70) Armor " << "Cost: 200 " << endl;
 			cout << "Select an item: " << endl;
 			cin >> shopSelect;
+			switch (shopSelect){
+			case 1:
+				if (money >= 10){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 10$ " << endl;
+					break;
+				}
+			case 2:
+				if (money >= 22){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 22$ " << endl;
+					break;
+				}
+			case 3:
+				if (money >= 40){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 40$ " << endl;
+					break;
+				}
+			case 4:
+				if (money >= 25){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 25$ " << endl;
+					break;
+				}
+			case 5:
+				if (money >= 30){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 30$ " << endl;
+					break;
+				}
+			case 6:
+				if (money >= 20){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 20$ " << endl;
+					break;
+				}
+			case 7:
+				if (money >= 60){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 60$ " << endl;
+					break;
+				}
+			case 8:
+				if (money >= 100){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 100$ " << endl;
+					break;
+				}
+			case 9:
+				if (money >= 200){
+					break;
+				}
+				else{
+					cout << "Not enough money, your balance is: " << money << " And you need 200$ " << endl;
+					break;
+				}
+			}
+			
 		case 3:
 			cout << endl;
 		case 4:

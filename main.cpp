@@ -4,6 +4,7 @@
 #include <iomanip>
 #include <fstream>
 #include "Characters.h"
+#include "Shop.h"
 
 using namespace std;
 
@@ -18,8 +19,12 @@ int main(){
 	float money = 0;
 	string name;
 	characters characters;
+	Shop shop;
 	int mainMenu = 0;
 	int shopSelect = 0;
+	int healPotCount;
+	int ragePotCount;
+	int speedPotCount;
 	cout << "Welcome to C++ RPG " << endl;
 	cout << "The file for statistic outputs will be CRPG.txt " << endl;
 	cout << "Enter a name for your character: " << endl;
@@ -71,6 +76,9 @@ int main(){
 			switch (shopSelect){
 			case 1:
 				if (money >= 10){
+					money - 10;
+					defense + 10;
+						
 					break;
 				}
 				else{
@@ -79,6 +87,8 @@ int main(){
 				}
 			case 2:
 				if (money >= 22){
+					money - 22;
+					attack + 12;
 					break;
 				}
 				else{
@@ -87,6 +97,9 @@ int main(){
 				}
 			case 3:
 				if (money >= 40){
+					money - 40;
+					armor + 20;
+
 					break;
 				}
 				else{
@@ -95,6 +108,8 @@ int main(){
 				}
 			case 4:
 				if (money >= 25){
+					money - 25;
+					healPotCount + 1;
 					break;
 				}
 				else{
@@ -103,6 +118,8 @@ int main(){
 				}
 			case 5:
 				if (money >= 30){
+					money - 30;
+					ragePotCount + 1;
 					break;
 				}
 				else{
@@ -111,6 +128,8 @@ int main(){
 				}
 			case 6:
 				if (money >= 20){
+					money - 20;
+					speedPotCount + 1;
 					break;
 				}
 				else{
@@ -119,6 +138,8 @@ int main(){
 				}
 			case 7:
 				if (money >= 60){
+					money - 60;
+					defense + 20;
 					break;
 				}
 				else{
@@ -127,6 +148,8 @@ int main(){
 				}
 			case 8:
 				if (money >= 100){
+					money - 100;
+					attack + 50;
 					break;
 				}
 				else{
@@ -135,6 +158,8 @@ int main(){
 				}
 			case 9:
 				if (money >= 200){
+					money - 200;
+					armor + 70;
 					break;
 				}
 				else{

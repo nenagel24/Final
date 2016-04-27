@@ -9,7 +9,8 @@
 using namespace std;
 
 int main(){
-	ifstream f;
+	
+	//User Variables
 	int health = 60;
 	int armor = 0;
 	int defense = 40;
@@ -18,13 +19,20 @@ int main(){
 	int deaths = 0;
 	float money = 0;
 	string name;
+	//Class Stuff
 	characters characters;
 	Shop shop;
+	ifstream f;
+	//Menus
 	int mainMenu = 0;
 	int shopSelect = 0;
-	int healPotCount;
-	int ragePotCount;
-	int speedPotCount;
+	int battleMenu = 0;
+	//Shop Stuff
+	int healPotCount = 0;
+	int ragePotCount = 0;
+	int speedPotCount = 0;
+
+
 	cout << "Welcome to C++ RPG " << endl;
 	cout << "The file for statistic outputs will be CRPG.txt " << endl;
 	cout << "Enter a name for your character: " << endl;
@@ -32,24 +40,26 @@ int main(){
 	cout << "You will now be referred to as: " << name << endl;
 	cout << "On this epic Journey you will accomplish what many coulnd't" << endl;
 	cout << "Defeat the Seven Bosses and be remembered for ever " << endl;
-	cout << "Embark on your journey,  " << name << endl;
+	cout << "Embark on your journey,  " << endl;
+	cout << endl;
 	while (true){
 
 		
 
 		cout << "Main Menu " << endl;
-		cout << "Kills:  " << kills << " Deaths:  " << deaths << endl;
+		cout << "Kills:  " << kills << " Deaths:  " << deaths << " Balance: " << money << endl;
 		cout << "Select what you want to do:  " << endl;
-		cout << "1. Prologue " << endl;
-		cout << "2. Shop " << endl;
-		cout << "3. Fight Bandits " << endl;
-		cout << "4. Boss 1 - Baas " << endl;
-		cout << "5. Boss 2 - Megatron " << endl;
-		cout << "6. Boss 3 - Hound " << endl;
-		cout << "7. Boss 4 - Zombie Hoard " << endl;
-		cout << "8. Boss 5 - T-Rex " << endl;
-		cout << "9. Boss 6 - Hades " << endl;
+		cout << "1.  Prologue " << endl;
+		cout << "2.  Shop " << endl;
+		cout << "3.  Fight Bandits " << endl;
+		cout << "4.  Boss 1 - Baas " << endl;
+		cout << "5.  Boss 2 - Megatron " << endl;
+		cout << "6.  Boss 3 - Hound " << endl;
+		cout << "7.  Boss 4 - Zombie Hoard " << endl;
+		cout << "8.  Boss 5 - T-Rex " << endl;
+		cout << "9.  Boss 6 - Hades " << endl;
 		cout << "10. Final Boss - Zeus  " << endl;
+		cout << "11. Your stats " << endl;
 		cin >> mainMenu;
 		switch (mainMenu){
 
@@ -76,8 +86,8 @@ int main(){
 			switch (shopSelect){
 			case 1:
 				if (money >= 10){
-					money - 10;
-					defense + 10;
+					money -= 10;
+					defense += 10;
 						
 					break;
 				}
@@ -87,8 +97,8 @@ int main(){
 				}
 			case 2:
 				if (money >= 22){
-					money - 22;
-					attack + 12;
+					money -= 22;
+					attack += 12;
 					break;
 				}
 				else{
@@ -97,8 +107,8 @@ int main(){
 				}
 			case 3:
 				if (money >= 40){
-					money - 40;
-					armor + 20;
+					money -= 40;
+					armor += 20;
 
 					break;
 				}
@@ -108,8 +118,8 @@ int main(){
 				}
 			case 4:
 				if (money >= 25){
-					money - 25;
-					healPotCount + 1;
+					money -= 25;
+					healPotCount += 1;
 					break;
 				}
 				else{
@@ -118,8 +128,8 @@ int main(){
 				}
 			case 5:
 				if (money >= 30){
-					money - 30;
-					ragePotCount + 1;
+					money -= 30;
+					ragePotCount += 1;
 					break;
 				}
 				else{
@@ -128,8 +138,8 @@ int main(){
 				}
 			case 6:
 				if (money >= 20){
-					money - 20;
-					speedPotCount + 1;
+					money -= 20;
+					speedPotCount += 1;
 					break;
 				}
 				else{
@@ -138,8 +148,8 @@ int main(){
 				}
 			case 7:
 				if (money >= 60){
-					money - 60;
-					defense + 20;
+					money -= 60;
+					defense += 20;
 					break;
 				}
 				else{
@@ -148,8 +158,8 @@ int main(){
 				}
 			case 8:
 				if (money >= 100){
-					money - 100;
-					attack + 50;
+					money -= 100;
+					attack += 50;
 					break;
 				}
 				else{
@@ -158,8 +168,8 @@ int main(){
 				}
 			case 9:
 				if (money >= 200){
-					money - 200;
-					armor + 70;
+					money -= 200;
+					armor += 70;
 					break;
 				}
 				else{
@@ -169,7 +179,14 @@ int main(){
 			}
 			
 		case 3:
-			cout << endl;
+			cout << "Battle Menu " << endl;
+			cout << "1. Attack " << endl;
+			cout << "2. Block " << endl;
+			cout << "3. Use Heal Potion " << endl;
+			cout << "4. Use Rage Potion " << endl;
+			cout << "5. Run away(Requires Speed Pot) " << endl;
+			cin >> battleMenu;
+			break;
 		case 4:
 			cout << endl;
 		case 5:
@@ -184,7 +201,16 @@ int main(){
 			cout << endl;
 		case 10:
 			cout << endl;
-		
+		case 11:
+			cout << "Attack: " << attack << endl;
+			cout << "Defense: " << defense << endl;
+			cout << "Armor: " << armor << endl;
+			cout << "Speed Pot Count: " << speedPotCount << endl;
+			cout << "Rage Pot Count: " << ragePotCount << endl;
+			cout << "Heal Pot Count: " << healPotCount << endl;
+			cout << "Kills: " << kills << endl;
+			cout << "Deaths: " << deaths << endl;
+			cout << "Money: " << money << endl;
 		}
 	}
 

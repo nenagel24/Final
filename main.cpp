@@ -31,7 +31,11 @@ int main(){
 	int healPotCount = 0;
 	int ragePotCount = 0;
 	int speedPotCount = 0;
-
+	//Enemy Variables
+	bool zeusDefeated = false;
+	int enemyHealth;
+	int enemyDefense;
+	int enemyArmor;
 
 	cout << "Welcome to C++ RPG " << endl;
 	cout << "The file for statistic outputs will be CRPG.txt " << endl;
@@ -186,21 +190,224 @@ int main(){
 			cout << "4. Use Rage Potion " << endl;
 			cout << "5. Run away(Requires Speed Pot) " << endl;
 			cin >> battleMenu;
+			switch (battleMenu){
+			case 1:
+
+			case 2:
+
+			case 3:
+
+			case 4:
+
+			case 5:
+				if (speedPotCount >= 1){
+					cout << "You have fled battle " << endl;
+					break;
+				}
+				else{
+					cout << "Not speed Pots available, fight " << endl;
+				}
+
+			}
+
 			break;
 		case 4:
-			cout << endl;
+			cout << "Battle Menu " << endl;
+			cout << "1. Attack " << endl;
+			cout << "2. Block " << endl;
+			cout << "3. Use Heal Potion " << endl;
+			cout << "4. Use Rage Potion " << endl;
+			cout << "5. Run away(Requires Speed Pot) " << endl;
+			cin >> battleMenu;
+			switch (battleMenu){
+			case 1:
+
+			case 2:
+
+			case 3:
+
+			case 4:
+
+			case 5:
+				if (speedPotCount >= 1){
+					cout << "You have fled battle " << endl;
+					break;
+				}
+				else{
+					cout << "Not speed Pots available, fight " << endl;
+				}
+
+			}
+			break;
+		
 		case 5:
-			cout << endl;
+			cout << "Battle Menu " << endl;
+			cout << "1. Attack " << endl;
+			cout << "2. Block " << endl;
+			cout << "3. Use Heal Potion " << endl;
+			cout << "4. Use Rage Potion " << endl;
+			cout << "5. Run away(Requires Speed Pot) " << endl;
+			cin >> battleMenu;
+			switch (battleMenu){
+			case 1:
+
+			case 2:
+
+			case 3:
+
+			case 4:
+
+			case 5:
+				if (speedPotCount >= 1){
+					cout << "You have fled battle " << endl;
+					break;
+				}
+				else{
+					cout << "Not speed Pots available, fight " << endl;
+				}
+
+			}
+			break;
 		case 6:
-			cout << endl;
+			cout << "Battle Menu " << endl;
+			cout << "1. Attack " << endl;
+			cout << "2. Block " << endl;
+			cout << "3. Use Heal Potion " << endl;
+			cout << "4. Use Rage Potion " << endl;
+			cout << "5. Run away(Requires Speed Pot) " << endl;
+			cin >> battleMenu;
+			switch (battleMenu){
+			case 1:
+
+			case 2:
+
+			case 3:
+
+			case 4:
+
+			case 5:
+				if (speedPotCount >= 1){
+					cout << "You have fled battle " << endl;
+					break;
+				}
+				else{
+					cout << "Not speed Pots available, fight " << endl;
+				}
+
+			}
+			break;
 		case 7:
-			cout << endl;
+			cout << "Battle Menu " << endl;
+			cout << "1. Attack " << endl;
+			cout << "2. Block " << endl;
+			cout << "3. Use Heal Potion " << endl;
+			cout << "4. Use Rage Potion " << endl;
+			cout << "5. Run away(Requires Speed Pot) " << endl;
+			cin >> battleMenu;
+			switch (battleMenu){
+			case 1:
+
+			case 2:
+
+			case 3:
+
+			case 4:
+
+			case 5:
+				if (speedPotCount >= 1){
+					cout << "You have fled battle " << endl;
+					break;
+				}
+				else{
+					cout << "Not speed Pots available, fight " << endl;
+				}
+
+			}
+			break;
 		case 8:
-			cout << endl;
+			cout << "Battle Menu " << endl;
+			cout << "1. Attack " << endl;
+			cout << "2. Block " << endl;
+			cout << "3. Use Heal Potion " << endl;
+			cout << "4. Use Rage Potion " << endl;
+			cout << "5. Run away(Requires Speed Pot) " << endl;
+			cin >> battleMenu;
+			switch (battleMenu){
+			case 1:
+
+			case 2:
+
+			case 3:
+
+			case 4:
+
+			case 5:
+				if (speedPotCount >= 1){
+					cout << "You have fled battle " << endl;
+					break;
+				}
+				else{
+					cout << "Not speed Pots available, fight " << endl;
+				}
+
+			}
+			break;
 		case 9:
-			cout << endl;
+			cout << "Battle Menu " << endl;
+			cout << "1. Attack " << endl;
+			cout << "2. Block " << endl;
+			cout << "3. Use Heal Potion " << endl;
+			cout << "4. Use Rage Potion " << endl;
+			cout << "5. Run away(Requires Speed Pot) " << endl;
+			cin >> battleMenu;
+			switch (battleMenu){
+			case 1:
+
+			case 2:
+
+			case 3:
+
+			case 4:
+
+			case 5:
+				if (speedPotCount >= 1){
+					cout << "You have fled battle " << endl;
+					break;
+				}
+				else{
+					cout << "Not speed Pots available, fight " << endl;
+				}
+
+			}
+			break;
 		case 10:
-			cout << endl;
+			cout << "Battle Menu " << endl;
+			cout << "1. Attack " << endl;
+			cout << "2. Block " << endl;
+			cout << "3. Use Heal Potion " << endl;
+			cout << "4. Use Rage Potion " << endl;
+			cout << "5. Run away(Requires Speed Pot) " << endl;
+			cin >> battleMenu;
+			switch (battleMenu){
+			case 1:
+
+			case 2:
+
+			case 3:
+
+			case 4:
+
+			case 5:
+				if (speedPotCount >= 1){
+					cout << "You have fled battle " << endl;
+					break;
+				}
+				else{
+					cout << "Not speed Pots available, fight " << endl;
+				}
+			
+			}
+			break;
 		case 11:
 			cout << "Attack: " << attack << endl;
 			cout << "Defense: " << defense << endl;

@@ -9,7 +9,7 @@ private:
 	int characterArmor;
 	//Bandit
 	int bandit;
-	int banditHealth;
+	int banditHealth = 10;
 	int banditAttack;
 	//First Boss
 	int baas;
@@ -83,6 +83,49 @@ public:
 	int getZeusHealth();
 	int getZeusArmor();
 	int getZeusAttack();
+
+
+
+	int setCharacter();
+	int setCharacterHealth();
+	int setCharacterAttack();
+	int getCharacterArmor();
+
+	int setBandit();
+	int setBanditHealth();
+	int setBanditAttack();
+
+	int setBaas();
+	int setBaasHealth();
+	int setBaasAttack();
+
+	int setMegatron();
+	int setMegatronHealth();
+	int setMegatronArmor();
+	int setMegatronAttack();
+
+	int setHound();
+	int setHoundHealth();
+	int setHoundAttack();
+
+	int setZombiehoard();
+	int setZombiehoardHealth();
+	int setZombiehoardAttack();
+
+	int setTrex();
+	int setTrexHealth();
+	int setTrexAttack();
+
+	int setHades();
+	int setHadesHealth();
+	int setHadesArmor();
+	int setHadesAttack();
+
+	int setZeus();
+	int setZeusHealth();
+	int setZeusArmor();
+	int setZeusAttack();
+
 
 
 

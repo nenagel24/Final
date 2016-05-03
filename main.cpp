@@ -9,7 +9,7 @@
 using namespace std;
 
 int main(){
-	
+
 	//User Variables
 	int health = 60;
 	int armor = 0;
@@ -17,7 +17,7 @@ int main(){
 	int attack = 30;
 	int kills = 0;
 	int deaths = 0;
-	float money = 0;
+	float money = 100;
 	string name;
 	//Class Stuff
 	characters characters;
@@ -48,7 +48,7 @@ int main(){
 	cout << endl;
 	while (true){
 
-		
+
 
 		cout << "Main Menu " << endl;
 		cout << "Kills:  " << kills << " Deaths:  " << deaths << " Balance: " << money << endl;
@@ -71,9 +71,10 @@ int main(){
 			cout << "Your father was known for his skill of martial arts and his brute strength " << endl;
 			cout << "He died fighting for your village against Zeus, the God of lightning " << endl;
 			cout << "You now seek revenge on Zeus for killing your father and kidnapping your younger siblings " << endl;
-			mainMenu - 1;
+			mainMenu = 0;
 			break;
 		case 2:
+			mainMenu = 0;
 			cout << "Welcome to Rons Shop of the Underworld! " << endl;
 			cout << "Your balance is: " << money << endl;
 			cout << "1. Warriors Shield(+10) Defense " << "Cost: 10 " << endl;
@@ -92,8 +93,9 @@ int main(){
 				if (money >= 10){
 					money -= 10;
 					defense += 10;
-						
+					shopSelect = 0;
 					break;
+					
 				}
 				else{
 					cout << "Not enough money, your balance is: " << money << " And you need 10$ " << endl;
@@ -181,8 +183,9 @@ int main(){
 					break;
 				}
 			}
-			
+
 		case 3:
+			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -196,7 +199,13 @@ int main(){
 			case 2:
 
 			case 3:
-
+				if (healPotCount >= 1){
+					cout << "You have been healed! " << endl;
+					health + 15;
+				}
+				else{
+					cout << "No health pots available...  " << endl;
+				}
 			case 4:
 
 			case 5:
@@ -212,6 +221,7 @@ int main(){
 
 			break;
 		case 4:
+			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -225,7 +235,13 @@ int main(){
 			case 2:
 
 			case 3:
-
+				if (healPotCount >= 1){
+					cout << "You have been healed! " << endl;
+					health + 15;
+				}
+				else{
+					cout << "No health pots available...  " << endl;
+				}
 			case 4:
 
 			case 5:
@@ -239,8 +255,9 @@ int main(){
 
 			}
 			break;
-		
+
 		case 5:
+			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -254,7 +271,13 @@ int main(){
 			case 2:
 
 			case 3:
-
+				if (healPotCount >= 1){
+					cout << "You have been healed! " << endl;
+					health + 15;
+				}
+				else{
+					cout << "No health pots available...  " << endl;
+				}
 			case 4:
 
 			case 5:
@@ -269,6 +292,7 @@ int main(){
 			}
 			break;
 		case 6:
+			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -282,7 +306,13 @@ int main(){
 			case 2:
 
 			case 3:
-
+				if (healPotCount >= 1){
+					cout << "You have been healed! " << endl;
+					health + 15;
+				}
+				else{
+					cout << "No health pots available...  " << endl;
+				}
 			case 4:
 
 			case 5:
@@ -297,6 +327,7 @@ int main(){
 			}
 			break;
 		case 7:
+			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -310,7 +341,13 @@ int main(){
 			case 2:
 
 			case 3:
-
+				if (healPotCount >= 1){
+					cout << "You have been healed! " << endl;
+					health + 15;
+				}
+				else{
+					cout << "No health pots available...  " << endl;
+				}
 			case 4:
 
 			case 5:
@@ -325,6 +362,7 @@ int main(){
 			}
 			break;
 		case 8:
+			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -338,7 +376,13 @@ int main(){
 			case 2:
 
 			case 3:
-
+				if (healPotCount >= 1){
+					cout << "You have been healed! " << endl;
+					health + 15;
+				}
+				else{
+					cout << "No health pots available...  " << endl;
+				}
 			case 4:
 
 			case 5:
@@ -353,6 +397,7 @@ int main(){
 			}
 			break;
 		case 9:
+			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -366,7 +411,13 @@ int main(){
 			case 2:
 
 			case 3:
-
+				if (healPotCount >= 1){
+					cout << "You have been healed! " << endl;
+					health + 15;
+				}
+				else{
+					cout << "No health pots available...  " << endl;
+				}
 			case 4:
 
 			case 5:
@@ -381,6 +432,7 @@ int main(){
 			}
 			break;
 		case 10:
+			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -394,7 +446,13 @@ int main(){
 			case 2:
 
 			case 3:
-
+				if (healPotCount >= 1){
+					cout << "You have been healed! " << endl;
+					health + 15;
+				}
+				else{
+					cout << "No health pots available...  " << endl;
+				}
 			case 4:
 
 			case 5:
@@ -405,7 +463,7 @@ int main(){
 				else{
 					cout << "Not speed Pots available, fight " << endl;
 				}
-			
+
 			}
 			break;
 		case 11:

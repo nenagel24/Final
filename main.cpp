@@ -36,7 +36,7 @@ int main(){
 	int enemyHealth;
 	int enemyDefense;
 	int enemyArmor;
-
+	bool ragePotionActive = false;
 	cout << "Welcome to C++ RPG " << endl;
 	cout << "The file for statistic outputs will be CRPG.txt " << endl;
 	cout << "Enter a name for your character: " << endl;
@@ -207,7 +207,13 @@ int main(){
 					cout << "No health pots available...  " << endl;
 				}
 			case 4:
-
+				if (ragePotCount >= 1){
+					cout << "Rage potion activated! " << endl;
+					ragePotionActive = true;
+				}
+				else{
+					cout << "No rage potions available " << endl;
+				}
 			case 5:
 				if (speedPotCount >= 1){
 					cout << "You have fled battle " << endl;
@@ -243,7 +249,13 @@ int main(){
 					cout << "No health pots available...  " << endl;
 				}
 			case 4:
-
+				if (ragePotCount >= 1){
+					cout << "Rage potion activated! " << endl;
+					ragePotionActive = true;
+				}
+				else{
+					cout << "No rage potions available " << endl;
+				}
 			case 5:
 				if (speedPotCount >= 1){
 					cout << "You have fled battle " << endl;
@@ -279,7 +291,13 @@ int main(){
 					cout << "No health pots available...  " << endl;
 				}
 			case 4:
-
+				if (ragePotCount >= 1){
+					cout << "Rage potion activated! " << endl;
+					ragePotionActive = true;
+				}
+				else{
+					cout << "No rage potions available " << endl;
+				}
 			case 5:
 				if (speedPotCount >= 1){
 					cout << "You have fled battle " << endl;
@@ -314,7 +332,13 @@ int main(){
 					cout << "No health pots available...  " << endl;
 				}
 			case 4:
-
+				if (ragePotCount >= 1){
+					cout << "Rage potion activated! " << endl;
+					ragePotionActive = true;
+				}
+				else{
+					cout << "No rage potions available " << endl;
+				}
 			case 5:
 				if (speedPotCount >= 1){
 					cout << "You have fled battle " << endl;
@@ -349,7 +373,13 @@ int main(){
 					cout << "No health pots available...  " << endl;
 				}
 			case 4:
-
+				if (ragePotCount >= 1){
+					cout << "Rage potion activated! " << endl;
+					ragePotionActive = true;
+				}
+				else{
+					cout << "No rage potions available " << endl;
+				}
 			case 5:
 				if (speedPotCount >= 1){
 					cout << "You have fled battle " << endl;
@@ -384,7 +414,13 @@ int main(){
 					cout << "No health pots available...  " << endl;
 				}
 			case 4:
-
+				if (ragePotCount >= 1){
+					cout << "Rage potion activated! " << endl;
+					ragePotionActive = true;
+				}
+				else{
+					cout << "No rage potions available " << endl;
+				}
 			case 5:
 				if (speedPotCount >= 1){
 					cout << "You have fled battle " << endl;
@@ -419,7 +455,13 @@ int main(){
 					cout << "No health pots available...  " << endl;
 				}
 			case 4:
-
+				if (ragePotCount >= 1){
+					cout << "Rage potion activated! " << endl;
+					ragePotionActive = true;
+				}
+				else{
+					cout << "No rage potions available " << endl;
+				}
 			case 5:
 				if (speedPotCount >= 1){
 					cout << "You have fled battle " << endl;
@@ -454,7 +496,13 @@ int main(){
 					cout << "No health pots available...  " << endl;
 				}
 			case 4:
-
+				if (ragePotCount >= 1){
+					cout << "Rage potion activated! " << endl;
+					ragePotionActive = true;
+				}
+				else{
+					cout << "No rage potions available " << endl;
+				}
 			case 5:
 				if (speedPotCount >= 1){
 					cout << "You have fled battle " << endl;

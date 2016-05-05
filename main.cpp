@@ -37,6 +37,9 @@ int main(){
 	int enemyDefense;
 	int enemyArmor;
 	bool ragePotionActive = false;
+	int blockCount = 0;
+
+
 	cout << "Welcome to C++ RPG " << endl;
 	cout << "The file for statistic outputs will be CRPG.txt " << endl;
 	cout << "Enter a name for your character: " << endl;
@@ -185,6 +188,7 @@ int main(){
 			}
 
 		case 3:
+			int enemyAttack = 2;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -197,7 +201,12 @@ int main(){
 			case 1:
 
 			case 2:
+				if (blockCount = 1){
+					defense / 4;
+					enemyAttack - defense;
+					cout << "You have been hit for " << enemyAttack << " Damage " << endl;
 
+				}
 			case 3:
 				if (healPotCount >= 1){
 					cout << "You have been healed! " << endl;
@@ -239,7 +248,12 @@ int main(){
 			case 1:
 
 			case 2:
+				if (blockCount = 1){
+					defense / 4;
+					enemyAttack - defense;
+					cout << "You have been hit for " << enemyAttack << " Damage " << endl;
 
+				}
 			case 3:
 				if (healPotCount >= 1){
 					cout << "You have been healed! " << endl;
@@ -281,7 +295,12 @@ int main(){
 			case 1:
 
 			case 2:
+				if (blockCount = 1){
+					defense / 4;
+					enemyAttack - defense;
+					cout << "You have been hit for " << enemyAttack << " Damage " << endl;
 
+				}
 			case 3:
 				if (healPotCount >= 1){
 					cout << "You have been healed! " << endl;
@@ -322,7 +341,12 @@ int main(){
 			case 1:
 
 			case 2:
+				if (blockCount = 1){
+					defense / 4;
+					enemyAttack - defense;
+					cout << "You have been hit for " << enemyAttack << " Damage " << endl;
 
+				}
 			case 3:
 				if (healPotCount >= 1){
 					cout << "You have been healed! " << endl;
@@ -363,7 +387,12 @@ int main(){
 			case 1:
 
 			case 2:
+				if (blockCount = 1){
+					defense / 4;
+					enemyAttack - defense;
+					cout << "You have been hit for " << enemyAttack << " Damage " << endl;
 
+				}
 			case 3:
 				if (healPotCount >= 1){
 					cout << "You have been healed! " << endl;
@@ -404,7 +433,12 @@ int main(){
 			case 1:
 
 			case 2:
+				if (blockCount = 1){
+					defense / 4;
+					enemyAttack - defense;
+					cout << "You have been hit for " << enemyAttack << " Damage " << endl;
 
+				}
 			case 3:
 				if (healPotCount >= 1){
 					cout << "You have been healed! " << endl;
@@ -445,7 +479,12 @@ int main(){
 			case 1:
 
 			case 2:
+				if (blockCount = 1){
+					defense / 4;
+					enemyAttack - defense;
+					cout << "You have been hit for " << enemyAttack << " Damage " << endl;
 
+				}
 			case 3:
 				if (healPotCount >= 1){
 					cout << "You have been healed! " << endl;
@@ -486,7 +525,12 @@ int main(){
 			case 1:
 
 			case 2:
+				if (blockCount = 1){
+					defense / 4;
+					enemyAttack - defense;
+					cout << "You have been hit for " << enemyAttack << " Damage " << endl;
 
+				}
 			case 3:
 				if (healPotCount >= 1){
 					cout << "You have been healed! " << endl;

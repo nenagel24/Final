@@ -46,6 +46,7 @@ int main(){
 	int ragePotCount = 0;
 	int speedPotCount = 0;
 	int rageTurnCount = 0;
+	int itemsBought = 0;
 
 	//Enemy Variables
 	bool zeusDefeated = false;
@@ -112,6 +113,7 @@ int main(){
 					money -= 10;
 					defense += 10;
 					shopSelect = 0;
+					itemsBought + 1;
 					break;
 					
 				}
@@ -123,6 +125,7 @@ int main(){
 				if (money >= 22){
 					money -= 22;
 					attack += 12;
+					itemsBought + 1;
 					break;
 				}
 				else{
@@ -133,7 +136,7 @@ int main(){
 				if (money >= 40){
 					money -= 40;
 					armor += 20;
-
+					itemsBought + 1;
 					break;
 				}
 				else{
@@ -144,6 +147,7 @@ int main(){
 				if (money >= 25){
 					money -= 25;
 					healPotCount += 1;
+					itemsBought + 1;
 					break;
 				}
 				else{
@@ -154,6 +158,7 @@ int main(){
 				if (money >= 30){
 					money -= 30;
 					ragePotCount += 1;
+					itemsBought + 1;
 					break;
 				}
 				else{
@@ -164,6 +169,7 @@ int main(){
 				if (money >= 20){
 					money -= 20;
 					speedPotCount += 1;
+					itemsBought + 1;
 					break;
 				}
 				else{
@@ -174,6 +180,7 @@ int main(){
 				if (money >= 60){
 					money -= 60;
 					defense += 20;
+					itemsBought + 1;
 					break;
 				}
 				else{
@@ -184,6 +191,7 @@ int main(){
 				if (money >= 100){
 					money -= 100;
 					attack += 50;
+					itemsBought + 1;
 					break;
 				}
 				else{
@@ -194,6 +202,7 @@ int main(){
 				if (money >= 200){
 					money -= 200;
 					armor += 70;
+					itemsBought + 1;
 					break;
 				}
 				else{
@@ -203,8 +212,8 @@ int main(){
 			}
 
 		case 3:
-			enemyAttack = 15;
-			enemyHealth = 15;
+			enemyAttack = 6;
+			enemyHealth = 44;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -225,10 +234,12 @@ int main(){
 					cout << "You have earned 3 money " << endl;
 					money + 3;
 					kills + 1;
+					break;
 				}
 				if (health <= 0){
 					cout << "You have died.... " << endl;
 					deaths + 1;
+					break;
 				}
 				if (rageTurnCount > 3){
 					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
@@ -286,7 +297,11 @@ int main(){
 			cin >> battleMenu;
 			switch (battleMenu){
 			case 1:
-
+				if (ragePotionActive = true){
+					attack + 15;
+					
+					rageTurnCount + 1;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -333,7 +348,11 @@ int main(){
 			cin >> battleMenu;
 			switch (battleMenu){
 			case 1:
+				if (ragePotionActive = true){
+					attack + 15;
 
+					rageTurnCount + 1;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -379,7 +398,11 @@ int main(){
 			cin >> battleMenu;
 			switch (battleMenu){
 			case 1:
+				if (ragePotionActive = true){
+					attack + 15;
 
+					rageTurnCount + 1;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -425,7 +448,11 @@ int main(){
 			cin >> battleMenu;
 			switch (battleMenu){
 			case 1:
+				if (ragePotionActive = true){
+					attack + 15;
 
+					rageTurnCount + 1;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -471,7 +498,11 @@ int main(){
 			cin >> battleMenu;
 			switch (battleMenu){
 			case 1:
+				if (ragePotionActive = true){
+					attack + 15;
 
+					rageTurnCount + 1;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -517,7 +548,11 @@ int main(){
 			cin >> battleMenu;
 			switch (battleMenu){
 			case 1:
+				if (ragePotionActive = true){
+					attack + 15;
 
+					rageTurnCount + 1;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -563,7 +598,11 @@ int main(){
 			cin >> battleMenu;
 			switch (battleMenu){
 			case 1:
+				if (ragePotionActive = true){
+					attack + 15;
 
+					rageTurnCount + 1;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -621,7 +660,10 @@ int main(){
 			cout << "Kills: " << kills << endl;
 			cout << "Deaths: " << deaths << endl;
 			cout << "Money: " << money << endl;
+			if (zeusDefeated = true){
+				out << "You have defeated the almighty Zeus, Making you the best warrior in history " << endl;
 
+			}
 			out.close();
 		}
 		

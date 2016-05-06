@@ -1,0 +1,10 @@
+Attack: 30
+Defense: 40
+Armor: 0
+Speed Pot Count: 0
+Rage Pot Count: 0
+Heal Pot Count: 0
+Kills: 0
+Deaths: 0
+Money: 100
+You have defeated the almighty Zeus, Making you the best warrior in history 

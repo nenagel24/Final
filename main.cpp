@@ -9,6 +9,16 @@
 using namespace std;
 
 int main(){
+	//Strings
+	string name;
+	string zeus = "Zeus";
+	string bandit = "Bandits";
+	string baas = "Baas";
+	string megatron = "Megatron";
+	string hound = "Richtofen";
+	string zombieHoard = "Zombies";
+	string trex = "T-Rex";
+	string hades = "Hades";
 
 	//User Variables
 	int health = 60;
@@ -18,27 +28,31 @@ int main(){
 	int kills = 0;
 	int deaths = 0;
 	float money = 100;
-	string name;
+	int blockCount = 0;
+	bool ragePotionActive = false;
+
 	//Class Stuff
 	characters characters;
 	Shop shop;
-	ifstream f;
+	ofstream out;
+
 	//Menus
 	int mainMenu = 0;
 	int shopSelect = 0;
 	int battleMenu = 0;
+
 	//Shop Stuff
 	int healPotCount = 0;
 	int ragePotCount = 0;
 	int speedPotCount = 0;
+	int rageTurnCount = 0;
+
 	//Enemy Variables
 	bool zeusDefeated = false;
 	int enemyHealth;
 	int enemyDefense;
 	int enemyArmor;
-	bool ragePotionActive = false;
-	int blockCount = 0;
-
+	int enemyAttack;
 
 	cout << "Welcome to C++ RPG " << endl;
 	cout << "The file for statistic outputs will be CRPG.txt " << endl;
@@ -67,6 +81,7 @@ int main(){
 		cout << "9.  Boss 6 - Hades " << endl;
 		cout << "10. Final Boss - Zeus  " << endl;
 		cout << "11. Your stats " << endl;
+		cout << "12. Output data to CRPG.txt " << endl;
 		cin >> mainMenu;
 		switch (mainMenu){
 
@@ -188,7 +203,8 @@ int main(){
 			}
 
 		case 3:
-			int enemyAttack = 2;
+			enemyAttack = 15;
+			enemyHealth = 15;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -199,7 +215,31 @@ int main(){
 			cin >> battleMenu;
 			switch (battleMenu){
 			case 1:
+				if (ragePotionActive = true){
+					attack + 15;
+					enemyHealth - attack;
+					rageTurnCount + 1;
+				}
+				if (enemyHealth <= 0){
+					cout << "You have defeated the " << bandit << endl;
+					cout << "You have earned 3 money " << endl;
+					money + 3;
+					kills + 1;
+				}
+				if (health <= 0){
+					cout << "You have died.... " << endl;
+					deaths + 1;
+				}
+				if (rageTurnCount > 3){
+					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
+					attack - 15;
+					enemyHealth - attack;
+					
+				}
+				else{
+					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
 
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -568,7 +608,24 @@ int main(){
 			cout << "Kills: " << kills << endl;
 			cout << "Deaths: " << deaths << endl;
 			cout << "Money: " << money << endl;
+
+		case 12:
+			cout << "Check the file CRPG.txt for stats " << endl;
+			out.open("CRPG.txt", ios::out | ios::trunc);
+			cout << "Attack: " << attack << endl;
+			cout << "Defense: " << defense << endl;
+			cout << "Armor: " << armor << endl;
+			cout << "Speed Pot Count: " << speedPotCount << endl;
+			cout << "Rage Pot Count: " << ragePotCount << endl;
+			cout << "Heal Pot Count: " << healPotCount << endl;
+			cout << "Kills: " << kills << endl;
+			cout << "Deaths: " << deaths << endl;
+			cout << "Money: " << money << endl;
+
+			out.close();
 		}
+		
+
 	}
 
 	return 0;

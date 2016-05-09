@@ -302,6 +302,12 @@ int main(){
 					
 					rageTurnCount + 1;
 				}
+				if (rageTurnCount > 3){
+					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
+					attack - 15;
+					enemyHealth - attack;
+
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -353,6 +359,12 @@ int main(){
 
 					rageTurnCount + 1;
 				}
+				if (rageTurnCount > 3){
+					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
+					attack - 15;
+					enemyHealth - attack;
+
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -402,6 +414,12 @@ int main(){
 					attack + 15;
 
 					rageTurnCount + 1;
+				}
+				if (rageTurnCount > 3){
+					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
+					attack - 15;
+					enemyHealth - attack;
+
 				}
 			case 2:
 				if (blockCount = 1){
@@ -453,6 +471,12 @@ int main(){
 
 					rageTurnCount + 1;
 				}
+				if (rageTurnCount > 3){
+					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
+					attack - 15;
+					enemyHealth - attack;
+
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -502,6 +526,12 @@ int main(){
 					attack + 15;
 
 					rageTurnCount + 1;
+				}
+				if (rageTurnCount > 3){
+					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
+					attack - 15;
+					enemyHealth - attack;
+
 				}
 			case 2:
 				if (blockCount = 1){
@@ -553,6 +583,12 @@ int main(){
 
 					rageTurnCount + 1;
 				}
+				if (rageTurnCount > 3){
+					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
+					attack - 15;
+					enemyHealth - attack;
+
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -603,6 +639,12 @@ int main(){
 
 					rageTurnCount + 1;
 				}
+				if (rageTurnCount > 3){
+					cout << "Your rage potion is used and your attack has been turned to normal " << endl;
+					attack - 15;
+					enemyHealth - attack;
+
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -651,15 +693,15 @@ int main(){
 		case 12:
 			cout << "Check the file CRPG.txt for stats " << endl;
 			out.open("CRPG.txt", ios::out | ios::trunc);
-			cout << "Attack: " << attack << endl;
-			cout << "Defense: " << defense << endl;
-			cout << "Armor: " << armor << endl;
-			cout << "Speed Pot Count: " << speedPotCount << endl;
-			cout << "Rage Pot Count: " << ragePotCount << endl;
-			cout << "Heal Pot Count: " << healPotCount << endl;
-			cout << "Kills: " << kills << endl;
-			cout << "Deaths: " << deaths << endl;
-			cout << "Money: " << money << endl;
+			out << "Attack: " << attack << endl;
+			out << "Defense: " << defense << endl;
+			out << "Armor: " << armor << endl;
+			out << "Speed Pot Count: " << speedPotCount << endl;
+			out << "Rage Pot Count: " << ragePotCount << endl;
+			out << "Heal Pot Count: " << healPotCount << endl;
+			out << "Kills: " << kills << endl;
+			out << "Deaths: " << deaths << endl;
+			out << "Money: " << money << endl;
 			if (zeusDefeated = true){
 				out << "You have defeated the almighty Zeus, Making you the best warrior in history " << endl;
 

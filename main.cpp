@@ -308,6 +308,13 @@ int main(){
 					enemyHealth - attack;
 
 				}
+				if (enemyHealth <= 0){
+					cout << "You have defeated the " << bandit << endl;
+					cout << "You have earned 3 money " << endl;
+					money + 3;
+					kills + 1;
+					break;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -365,6 +372,13 @@ int main(){
 					enemyHealth - attack;
 
 				}
+				if (enemyHealth <= 0){
+					cout << "You have defeated the " << bandit << endl;
+					cout << "You have earned 3 money " << endl;
+					money + 3;
+					kills + 1;
+					break;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -420,6 +434,13 @@ int main(){
 					attack - 15;
 					enemyHealth - attack;
 
+				}
+				if (enemyHealth <= 0){
+					cout << "You have defeated the " << bandit << endl;
+					cout << "You have earned 3 money " << endl;
+					money + 3;
+					kills + 1;
+					break;
 				}
 			case 2:
 				if (blockCount = 1){
@@ -477,6 +498,13 @@ int main(){
 					enemyHealth - attack;
 
 				}
+				if (enemyHealth <= 0){
+					cout << "You have defeated the " << bandit << endl;
+					cout << "You have earned 3 money " << endl;
+					money + 3;
+					kills + 1;
+					break;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -532,6 +560,13 @@ int main(){
 					attack - 15;
 					enemyHealth - attack;
 
+				}
+				if (enemyHealth <= 0){
+					cout << "You have defeated the " << bandit << endl;
+					cout << "You have earned 3 money " << endl;
+					money + 3;
+					kills + 1;
+					break;
 				}
 			case 2:
 				if (blockCount = 1){
@@ -589,6 +624,13 @@ int main(){
 					enemyHealth - attack;
 
 				}
+				if (enemyHealth <= 0){
+					cout << "You have defeated the " << bandit << endl;
+					cout << "You have earned 3 money " << endl;
+					money + 3;
+					kills + 1;
+					break;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -644,6 +686,13 @@ int main(){
 					attack - 15;
 					enemyHealth - attack;
 
+				}
+				if (enemyHealth <= 0){
+					cout << "You have defeated the " << bandit << endl;
+					cout << "You have earned 3 money " << endl;
+					money + 3;
+					kills + 1;
+					break;
 				}
 			case 2:
 				if (blockCount = 1){

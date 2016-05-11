@@ -315,6 +315,11 @@ int main(){
 					kills + 1;
 					break;
 				}
+				if (health <= 0){
+					cout << "You have died.... " << endl;
+					deaths + 1;
+					break;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -379,6 +384,11 @@ int main(){
 					kills + 1;
 					break;
 				}
+				if (health <= 0){
+					cout << "You have died.... " << endl;
+					deaths + 1;
+					break;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -434,6 +444,11 @@ int main(){
 					attack - 15;
 					enemyHealth - attack;
 
+				}
+				if (health <= 0){
+					cout << "You have died.... " << endl;
+					deaths + 1;
+					break;
 				}
 				if (enemyHealth <= 0){
 					cout << "You have defeated the " << bandit << endl;
@@ -505,6 +520,11 @@ int main(){
 					kills + 1;
 					break;
 				}
+				if (health <= 0){
+					cout << "You have died.... " << endl;
+					deaths + 1;
+					break;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -566,6 +586,11 @@ int main(){
 					cout << "You have earned 3 money " << endl;
 					money + 3;
 					kills + 1;
+					break;
+				}
+				if (health <= 0){
+					cout << "You have died.... " << endl;
+					deaths + 1;
 					break;
 				}
 			case 2:
@@ -631,6 +656,11 @@ int main(){
 					kills + 1;
 					break;
 				}
+				if (health <= 0){
+					cout << "You have died.... " << endl;
+					deaths + 1;
+					break;
+				}
 			case 2:
 				if (blockCount = 1){
 					defense / 4;
@@ -692,6 +722,11 @@ int main(){
 					cout << "You have earned 3 money " << endl;
 					money + 3;
 					kills + 1;
+					break;
+				}
+				if (health <= 0){
+					cout << "You have died.... " << endl;
+					deaths + 1;
 					break;
 				}
 			case 2:

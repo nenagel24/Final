@@ -212,6 +212,7 @@ int main(){
 			}
 
 		case 3:
+			cout << "You are fighting " << bandit << " ! " << endl;
 			enemyAttack = 6;
 			enemyHealth = 44;
 			mainMenu = 0;
@@ -287,6 +288,7 @@ int main(){
 
 			break;
 		case 4:
+			cout << "You are fighting " << baas << " Zeus's Number One thug " << endl;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -319,6 +321,10 @@ int main(){
 					cout << "You have died.... " << endl;
 					deaths + 1;
 					break;
+				}
+				else{
+					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+
 				}
 			case 2:
 				if (blockCount = 1){
@@ -356,6 +362,7 @@ int main(){
 			break;
 
 		case 5:
+			cout << "You are fighting " << megatron << " He knew your father and gave his location to Zeus " << endl;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -388,6 +395,10 @@ int main(){
 					cout << "You have died.... " << endl;
 					deaths + 1;
 					break;
+				}
+				else{
+					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+
 				}
 			case 2:
 				if (blockCount = 1){
@@ -424,6 +435,7 @@ int main(){
 			}
 			break;
 		case 6:
+			cout << "You are fighting " << hound << " the dog from the underworld " << endl;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -456,6 +468,10 @@ int main(){
 					money + 3;
 					kills + 1;
 					break;
+				}
+				else{
+					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+
 				}
 			case 2:
 				if (blockCount = 1){
@@ -492,6 +508,7 @@ int main(){
 			}
 			break;
 		case 7:
+			cout << " You are fighting " << zombieHoard << " Zeus's army sent to kill you " << endl;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -524,6 +541,10 @@ int main(){
 					cout << "You have died.... " << endl;
 					deaths + 1;
 					break;
+				}
+				else{
+					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+
 				}
 			case 2:
 				if (blockCount = 1){
@@ -560,6 +581,7 @@ int main(){
 			}
 			break;
 		case 8:
+			cout << "You are fighting " << trex << " Zeus's guard " << endl;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -592,6 +614,10 @@ int main(){
 					cout << "You have died.... " << endl;
 					deaths + 1;
 					break;
+				}
+				else{
+					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+
 				}
 			case 2:
 				if (blockCount = 1){
@@ -628,6 +654,7 @@ int main(){
 			}
 			break;
 		case 9:
+			cout << "You are fighting " << hades << " Zeus's brother " << endl;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -660,6 +687,10 @@ int main(){
 					cout << "You have died.... " << endl;
 					deaths + 1;
 					break;
+				}
+				else{
+					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+
 				}
 			case 2:
 				if (blockCount = 1){
@@ -697,6 +728,7 @@ int main(){
 			break;
 		case 10:
 			mainMenu = 0;
+			cout << "You are battling " << zeus << "The ruler of the skies and murderer of your father... " << endl;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -728,6 +760,10 @@ int main(){
 					cout << "You have died.... " << endl;
 					deaths + 1;
 					break;
+				}
+				else{
+					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+
 				}
 			case 2:
 				if (blockCount = 1){

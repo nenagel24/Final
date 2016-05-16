@@ -215,6 +215,7 @@ int main(){
 			cout << "You are fighting " << bandit << " ! " << endl;
 			enemyAttack = 6;
 			enemyHealth = 44;
+			enemyDefense = 0;
 			mainMenu = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -290,6 +291,9 @@ int main(){
 		case 4:
 			cout << "You are fighting " << baas << " Zeus's Number One thug " << endl;
 			mainMenu = 0;
+			enemyAttack = 6;
+			enemyHealth = 44;
+			enemyDefense = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -364,6 +368,9 @@ int main(){
 		case 5:
 			cout << "You are fighting " << megatron << " He knew your father and gave his location to Zeus " << endl;
 			mainMenu = 0;
+			enemyAttack = 6;
+			enemyHealth = 44;
+			enemyDefense = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -437,6 +444,9 @@ int main(){
 		case 6:
 			cout << "You are fighting " << hound << " the dog from the underworld " << endl;
 			mainMenu = 0;
+			enemyAttack = 6;
+			enemyHealth = 44;
+			enemyDefense = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -510,6 +520,9 @@ int main(){
 		case 7:
 			cout << " You are fighting " << zombieHoard << " Zeus's army sent to kill you " << endl;
 			mainMenu = 0;
+			enemyAttack = 6;
+			enemyHealth = 44;
+			enemyDefense = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -583,6 +596,9 @@ int main(){
 		case 8:
 			cout << "You are fighting " << trex << " Zeus's guard " << endl;
 			mainMenu = 0;
+			enemyAttack = 6;
+			enemyHealth = 44;
+			enemyDefense = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -656,6 +672,9 @@ int main(){
 		case 9:
 			cout << "You are fighting " << hades << " Zeus's brother " << endl;
 			mainMenu = 0;
+			enemyAttack = 6;
+			enemyHealth = 44;
+			enemyDefense = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -728,7 +747,14 @@ int main(){
 			break;
 		case 10:
 			mainMenu = 0;
+			enemyAttack = 6;
+			enemyHealth = 44;
+			enemyDefense = 0;
 			cout << "You are battling " << zeus << "The ruler of the skies and murderer of your father... " << endl;
+
+			cout << zeus << ": So, one wishes to die just like his father " << endl;
+			cout << name << ": My fathers death will be avenged " << endl;
+			cout << zeus << ": We will see boy " << endl;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;

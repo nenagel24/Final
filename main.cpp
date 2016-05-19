@@ -34,7 +34,7 @@ int main(){
 	//Class Stuff
 	characters characters;
 	Shop shop;
-	ofstream out;
+    ofstream out;
 
 	//Menus
 	int mainMenu = 0;
@@ -291,8 +291,8 @@ int main(){
 		case 4:
 			cout << "You are fighting " << baas << " Zeus's Number One thug " << endl;
 			mainMenu = 0;
-			enemyAttack = 6;
-			enemyHealth = 44;
+			enemyAttack = 14;
+			enemyHealth = 62;
 			enemyDefense = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -315,9 +315,9 @@ int main(){
 
 				}
 				if (enemyHealth <= 0){
-					cout << "You have defeated the " << bandit << endl;
-					cout << "You have earned 3 money " << endl;
-					money + 3;
+					cout << "You have defeated " << baas << endl;
+					cout << "You have earned 8 money " << endl;
+					money + 8;
 					kills + 1;
 					break;
 				}
@@ -368,9 +368,9 @@ int main(){
 		case 5:
 			cout << "You are fighting " << megatron << " He knew your father and gave his location to Zeus " << endl;
 			mainMenu = 0;
-			enemyAttack = 6;
-			enemyHealth = 44;
-			enemyDefense = 0;
+			enemyAttack = 40;
+			enemyHealth = 63;
+			enemyDefense = 10;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -392,9 +392,9 @@ int main(){
 
 				}
 				if (enemyHealth <= 0){
-					cout << "You have defeated the " << bandit << endl;
-					cout << "You have earned 3 money " << endl;
-					money + 3;
+					cout << "You have defeated " << megatron << endl;
+					cout << "You have earned 12 money " << endl;
+					money + 12;
 					kills + 1;
 					break;
 				}
@@ -444,8 +444,8 @@ int main(){
 		case 6:
 			cout << "You are fighting " << hound << " the dog from the underworld " << endl;
 			mainMenu = 0;
-			enemyAttack = 6;
-			enemyHealth = 44;
+			enemyAttack = 50;
+			enemyHealth = 80;
 			enemyDefense = 0;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
@@ -473,9 +473,9 @@ int main(){
 					break;
 				}
 				if (enemyHealth <= 0){
-					cout << "You have defeated the " << bandit << endl;
-					cout << "You have earned 3 money " << endl;
-					money + 3;
+					cout << "You have defeated the " << hound << endl;
+					cout << "You have earned 17 money " << endl;
+					money + 17;
 					kills + 1;
 					break;
 				}
@@ -520,9 +520,9 @@ int main(){
 		case 7:
 			cout << " You are fighting " << zombieHoard << " Zeus's army sent to kill you " << endl;
 			mainMenu = 0;
-			enemyAttack = 6;
-			enemyHealth = 44;
-			enemyDefense = 0;
+			enemyAttack = 20;
+			enemyHealth = 234;
+			enemyDefense = 5;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -544,9 +544,9 @@ int main(){
 
 				}
 				if (enemyHealth <= 0){
-					cout << "You have defeated the " << bandit << endl;
-					cout << "You have earned 3 money " << endl;
-					money + 3;
+					cout << "You have defeated the " << zombieHoard << endl;
+					cout << "You have earned 25 money " << endl;
+					money + 25;
 					kills + 1;
 					break;
 				}
@@ -596,9 +596,9 @@ int main(){
 		case 8:
 			cout << "You are fighting " << trex << " Zeus's guard " << endl;
 			mainMenu = 0;
-			enemyAttack = 6;
-			enemyHealth = 44;
-			enemyDefense = 0;
+			enemyAttack = 87;
+			enemyHealth = 152;
+			enemyDefense = 34;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -620,9 +620,9 @@ int main(){
 
 				}
 				if (enemyHealth <= 0){
-					cout << "You have defeated the " << bandit << endl;
-					cout << "You have earned 3 money " << endl;
-					money + 3;
+					cout << "You have defeated the " << trex << endl;
+					cout << "You have earned 30 money " << endl;
+					money + 30;
 					kills + 1;
 					break;
 				}
@@ -672,9 +672,9 @@ int main(){
 		case 9:
 			cout << "You are fighting " << hades << " Zeus's brother " << endl;
 			mainMenu = 0;
-			enemyAttack = 6;
-			enemyHealth = 44;
-			enemyDefense = 0;
+			enemyAttack = 102;
+			enemyHealth = 180;
+			enemyDefense = 50;
 			cout << "Battle Menu " << endl;
 			cout << "1. Attack " << endl;
 			cout << "2. Block " << endl;
@@ -696,9 +696,10 @@ int main(){
 
 				}
 				if (enemyHealth <= 0){
-					cout << "You have defeated the " << bandit << endl;
-					cout << "You have earned 3 money " << endl;
-					money + 3;
+					cout << "You have defeated " << hades << endl;
+					cout << "Defeating Zeus will be no easy task and Zeus's power cannont be underestimated... " << endl;
+					cout << "You have earned 50 money " << endl;
+					money + 50;
 					kills + 1;
 					break;
 				}
@@ -747,9 +748,9 @@ int main(){
 			break;
 		case 10:
 			mainMenu = 0;
-			enemyAttack = 6;
-			enemyHealth = 44;
-			enemyDefense = 0;
+			enemyAttack = 122;
+			enemyHealth = 200;
+			enemyDefense = 70;
 			cout << "You are battling " << zeus << "The ruler of the skies and murderer of your father... " << endl;
 
 			cout << zeus << ": So, one wishes to die just like his father " << endl;
@@ -776,9 +777,9 @@ int main(){
 
 				}
 				if (enemyHealth <= 0){
-					cout << "You have defeated the " << bandit << endl;
-					cout << "You have earned 3 money " << endl;
-					money + 3;
+					cout << "You have defeated the almighty " << zeus << endl;
+					cout << "You have earned infinite wealth, and control the world " << endl;
+					money + 1000000000000;
 					kills + 1;
 					break;
 				}

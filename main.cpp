@@ -251,7 +251,9 @@ int main(){
 				}
 				else{
 					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+					cout << endl;
 
+					cout << "The enemy has hit you for " << enemyAttack << " Damage! " << endl;
 				}
 			case 2:
 				if (blockCount = 1){
@@ -328,7 +330,9 @@ int main(){
 				}
 				else{
 					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+					cout << endl;
 
+					cout << "The enemy has hit you for " << enemyAttack << " Damage! " << endl;
 				}
 			case 2:
 				if (blockCount = 1){
@@ -405,7 +409,9 @@ int main(){
 				}
 				else{
 					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+					cout << endl;
 
+					cout << "The enemy has hit you for " << enemyAttack << " Damage! " << endl;
 				}
 			case 2:
 				if (blockCount = 1){
@@ -481,6 +487,9 @@ int main(){
 				}
 				else{
 					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+					cout << endl;
+
+					cout << "The enemy has hit you for " << enemyAttack << " Damage! " << endl;
 
 				}
 			case 2:
@@ -557,7 +566,9 @@ int main(){
 				}
 				else{
 					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+					cout << endl;
 
+					cout << "The enemy has hit you for " << enemyAttack << " Damage! " << endl;
 				}
 			case 2:
 				if (blockCount = 1){
@@ -633,7 +644,9 @@ int main(){
 				}
 				else{
 					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+					cout << endl;
 
+					cout << "The enemy has hit you for " << enemyAttack << " Damage! " << endl;
 				}
 			case 2:
 				if (blockCount = 1){
@@ -710,7 +723,9 @@ int main(){
 				}
 				else{
 					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+					cout << endl;
 
+					cout << "The enemy has hit you for " << enemyAttack << " Damage! " << endl;
 				}
 			case 2:
 				if (blockCount = 1){
@@ -790,7 +805,9 @@ int main(){
 				}
 				else{
 					cout << "You have attacked and hit the enemy for " << attack << " Damage! " << endl;
+					cout << endl;
 
+					cout << "The enemy has hit you for " << enemyAttack << " Damage! " << endl;
 				}
 			case 2:
 				if (blockCount = 1){

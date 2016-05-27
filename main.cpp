@@ -9,6 +9,12 @@
 using namespace std;
 
 int main(){
+
+	//Calc Variables
+	int calc = 0;
+	float num1;
+	float num2;
+	float calcTotal;
 	//Strings
 	string name;
 	string zeus = "Zeus";
@@ -83,6 +89,7 @@ int main(){
 		cout << "10. Final Boss - Zeus  " << endl;
 		cout << "11. Your stats " << endl;
 		cout << "12. Output data to CRPG.txt " << endl;
+		cout << "13. Calculator " << endl;
 		cin >> mainMenu;
 		switch (mainMenu){
 
@@ -871,8 +878,46 @@ int main(){
 
 			}
 			out.close();
+		case 13:
+			cout << "    SIMPLE CALCULATOR     " << endl;
+			cout << "Select: ";
+			cout << "1. Add " << endl;
+			cout << "2. Subtract " << endl;
+			cout << "3. Multiply " << endl;
+			cout << "4. Divide " << endl;
+			switch (calc){
+			case 1:
+				cout << "First number: ";
+				cin >> num1;
+				cout << "Second number: ";
+				cin >> num2;
+
+				cout << "The Formula " << num1 << " + " << num2 << " Came out to be:  " << num1+num2 << endl;
+			case 2:
+				cout << "First number: ";
+				cin >> num1;
+				cout << "Second number: ";
+				cin >> num2;
+
+				cout << "The Formula " << num1 << " - " << num2 << " Came out to be:  " << num1 - num2 << endl;
+			case 3:
+				cout << "First number: ";
+				cin >> num1;
+				cout << "Second number: ";
+				cin >> num2;
+
+				cout << "The Formula " << num1 << "  *  " << num2 << "Came out to be: " << num1*num2 << endl;
+			case 4:
+				cout << "First number: ";
+				cin >> num1;
+				cout << "Second number: ";
+				cin >> num2;
+
+				cout << "The Formula " << num1 << "  /  " << num2 << "Came out to be: " << num1/num2 << endl;
+			}
 		}
 		
+
 
 	}
 
